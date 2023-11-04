@@ -35,7 +35,7 @@ export default async function Home() {
       <Team props={data} />
 
       {/* Counter */}
-      <Counter props={data2} />
+      {/* <Counter props={data2} /> */}
 
       {/* Action */}
       <Action />

@@ -14,6 +14,8 @@ import { QuillScript } from "@/utility/QuillScript";
 import { DeleteAlertBlogPost } from "@/utility/DeleteAlert";
 import { BlogUpdateDialog } from "@/components/BlogUpdateDialog";
 
+
+
 export default function Page() {
   const [editorData, setEditorData] = useState("");
   const [blog, setBlog] = useState([]);
@@ -167,16 +169,16 @@ export default function Page() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 border-t border-gray-100">
-                {blog.map((item, index) => (
+                {blog?.map((item, index) => (
                   <tr className="hover:bg-gray-50" key={index}>
-                    <td className="px-6 py-4">{item.title}</td>
+                    <td className="px-6 py-4">{item?.title}</td>
                     <td className="px-6 py-4">
-                      {item.updateAt.split("T", 1)[0]}
+                      {item?.updateAt.split("T", 1)[0]}
                     </td>
 
                     <td className="px-6 py-4">
                       <img
-                        src={item.imgCDN}
+                        src={item?.imgCDN}
                         alt=""
                         className="w-[50px] h-[50px] object-cover"
                       />
@@ -187,7 +189,7 @@ export default function Page() {
                         <span
                           className="cursor-pointer"
                           x-data="{ tooltip: 'Delete' }"
-                          onClick={() => deleteBlogControl(item.id)}
+                          onClick={() => deleteBlogControl(item?.id)}
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +207,7 @@ export default function Page() {
                             />
                           </svg>
                         </span>
-                        <BlogUpdateDialog id={item.id} />
+                        <BlogUpdateDialog id={item?.id} />
                       </div>
                     </td>
                   </tr>

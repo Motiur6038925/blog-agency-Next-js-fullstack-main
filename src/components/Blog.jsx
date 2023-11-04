@@ -28,7 +28,7 @@ const Blog = (props) => {
         <div className="grid grid-cols-12 gap-[30px]">
           {data.map((item, index) => (
             <div key={index} className="col-span-4 px-4 mb-8">
-              <a className="block max-w-md mx-auto group relative" href={`blog-details/${item.id}`}>
+              <a className="block max-w-md mx-auto group relative" href={`blog-details/${item?.id}`}>
                 <div className="absolute bottom-0 left-0 w-full p-5">
                   <div className="p-5 bg-white rounded-xl">
                     <h4 className="text-xl font-semibold">
@@ -53,7 +53,7 @@ const Blog = (props) => {
                 </div>
                 <img
                   className="block w-full h-80 rounded-lg"
-                  src={item.imgCDN}
+                  src={item?.imgCDN}
                   alt=""
                 />
               </a>

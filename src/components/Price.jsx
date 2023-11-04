@@ -13,12 +13,12 @@ const Price = (props) => {
       <div className="container  mx-auto">
         <div className="text-center mb-16">
           <h2 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading">
-            <span>{data[0].title}</span>
+            <span>{data[0]?.title}</span>
             {/* <span className="text-blue-600">choose</span>
             <span>your best plan</span> */}
           </h2>
           <p className="max-w-sm mx-auto text-lg text-gray-400">
-            {data[0].content}
+            {data[0]?.content}
           </p>
         </div>
         <div className="flex flex-wrap -mx-3">
@@ -30,10 +30,10 @@ const Price = (props) => {
                 alt=""
               />
               <h3 className="mb-2 text-4xl font-bold font-heading">
-                {data[0].catagorises}
+                {data[0]?.catagorises}
               </h3>
               <span className="text-4xl text-blue-600 font-bold font-heading">
-                {data[0].price}
+                {data[0]?.price}
               </span>
               <p className="mt-2 mb-8 text-gray-400">user per month</p>
               <div className="flex flex-col items-center mb-8">
@@ -53,7 +53,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features1}</span>
+                    <span>{data[0]?.features1}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -70,7 +70,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features2}</span>
+                    <span>{data[0]?.features2}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -87,7 +87,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features3}</span>
+                    <span>{data[0]?.features3}</span>
                   </li>
                   <li className="flex">
                     <svg
@@ -104,7 +104,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features4}</span>
+                    <span>{data[0]?.features4}</span>
                   </li>
                 </ul>
               </div>
@@ -132,10 +132,10 @@ const Price = (props) => {
                 alt=""
               />
               <h3 className="mb-2 text-4xl font-bold font-heading">
-                {data[0].catagorises}
+                {data[0]?.catagorises}
               </h3>
               <span className="text-4xl text-blue-600 font-bold font-heading">
-                {data[0].price}
+                {data[0]?.price}
               </span>
               <p className="mt-2 mb-8 text-gray-400">user per month</p>
               <div className="flex flex-col items-center mb-8">
@@ -155,7 +155,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features1}</span>
+                    <span>{data[0]?.features1}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -172,7 +172,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features2}</span>
+                    <span>{data[0]?.features2}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -189,7 +189,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features3}</span>
+                    <span>{data[0]?.features3}</span>
                   </li>
                   <li className="flex">
                     <svg
@@ -206,7 +206,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features4}</span>
+                    <span>{data[0]?.features4}</span>
                   </li>
                 </ul>
               </div>
@@ -234,10 +234,10 @@ const Price = (props) => {
                 alt=""
               />
               <h3 className="mb-2 text-4xl font-bold font-heading">
-                {data[0].catagorises}
+                {data[0]?.catagorises}
               </h3>
               <span className="text-4xl text-blue-600 font-bold font-heading">
-                {data[0].price}
+                {data[0]?.price}
               </span>
               <p className="mt-2 mb-8 text-gray-400">user per month</p>
               <div className="flex flex-col items-center mb-8">
@@ -257,7 +257,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features1}</span>
+                    <span>{data[0]?.features1}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -274,7 +274,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features2}</span>
+                    <span>{data[0]?.features2}</span>
                   </li>
                   <li className="flex mb-3">
                     <svg
@@ -291,7 +291,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features3}</span>
+                    <span>{data[0]?.features3}</span>
                   </li>
                   <li className="flex">
                     <svg
@@ -308,7 +308,7 @@ const Price = (props) => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{data[0].features4}</span>
+                    <span>{data[0]?.features4}</span>
                   </li>
                 </ul>
               </div>
